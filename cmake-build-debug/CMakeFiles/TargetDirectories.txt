@@ -1,0 +1,3 @@
+C:/Users/tromk/CLionProjects/coms321project1/cmake-build-debug/CMakeFiles/coms321project1.dir
+C:/Users/tromk/CLionProjects/coms321project1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/tromk/CLionProjects/coms321project1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

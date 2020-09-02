@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/tromk/CLionProjects/coms321project1/genscd.c
+stdio.h
+-
+
+C:/Users/tromk/CLionProjects/coms321project1/main.c
+stdio.h
+-
+genscd.c
+C:/Users/tromk/CLionProjects/coms321project1/genscd.c
+
