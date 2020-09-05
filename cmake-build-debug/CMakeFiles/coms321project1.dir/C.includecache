@@ -9,6 +9,10 @@
 C:/Users/tromk/CLionProjects/coms321project1/genscd.c
 stdio.h
 -
+stdlib.h
+-
+math.h
+-
 
 C:/Users/tromk/CLionProjects/coms321project1/main.c
 stdio.h
