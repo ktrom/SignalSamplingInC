@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/tromk/CLionProjects/coms321project1
+# Install script for directory: C:/Users/tromtemp/Documents/github_folder/SignalSamplingInC
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/tromk/CLionProjects/coms321project1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/tromtemp/Documents/github_folder/SignalSamplingInC/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

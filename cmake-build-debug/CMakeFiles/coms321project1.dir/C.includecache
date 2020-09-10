@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/tromk/CLionProjects/coms321project1/genscd.c
+C:/Users/tromtemp/Documents/github_folder/SignalSamplingInC/genscd.c
 stdio.h
 -
 stdlib.h
@@ -14,9 +14,9 @@ stdlib.h
 math.h
 -
 
-C:/Users/tromk/CLionProjects/coms321project1/main.c
+C:/Users/tromtemp/Documents/github_folder/SignalSamplingInC/main2.c
 stdio.h
 -
 genscd.c
-C:/Users/tromk/CLionProjects/coms321project1/genscd.c
+C:/Users/tromtemp/Documents/github_folder/SignalSamplingInC/genscd.c
 

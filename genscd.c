@@ -28,9 +28,11 @@ void gensine(float frequency, float sample_rate, float time_duration){ // functi
 
 void silence(float sample_rate, float time_duration){ // function which will output the y-coordinates of a sine wave given these parameters
     for(int i = 0; i < time_duration*sample_rate; i++){
-        printf("%0.1f\n", 0.0);
+        printf("%0.4f\n", 0.0);
     }
 }
+
+// This method prints the DTMF wave for the given character to standard out
 void printStandardTones(char c){
     double tones[2][4] = {
             {1209.0, 1336.0, 1477.0, 1633.0},
@@ -38,8 +40,9 @@ void printStandardTones(char c){
     };
     float sample_rate = 8000;
     float time_duration = .5;
-    float * outputArray1, * outputArray2;
+    float * outputArray1, * outputArray2; // variables for the waves to compose the output wave
 
+    // Sets the appropriate values for the composing sine waves
     switch (c){
         case '1':
             outputArray1 = getOutputArray(697, 8000, .5);
@@ -107,9 +110,10 @@ void printStandardTones(char c){
             break;
     }
 
-    float * resultantArray = (float *) malloc((int)(time_duration * sample_rate)* sizeof(float));
-    for(int i = 0; i < time_duration * sample_rate; i++){
-        resultantArray[i] = (outputArray1[i] + outputArray2[i])/2;
-    }
 
+    float * resultantArray = (float *) malloc((int)(time_duration * sample_rate)* sizeof(float)); 
+    for(int i = 0; i < time_duration * sample_rate; i++){
+        resultantArray[i] = (outputArray1[i] + outputArray2[i])/2; // Adding waves and normalizing to keep magnitude<1
+        printf("%0.4lf\n", resultantArray[i]);
+    }
 }

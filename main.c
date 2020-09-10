@@ -1,29 +1,17 @@
 #include <stdio.h>
 #include "genscd.c"
 
+// this program will prompt the user for a frequency, a sample rate, and a time duration
+// output the function values of the sine wave for that duration with the specified
+// frequency sampled at the given rate
 int main() {
-    char phoneNumber[10];
-    printf("Input the 10-digit telephone number separated by spaces\n");
+    float frequency = 0;
+    float sample_rate = 0;
+    float time_duration = 0;
 
-    scanf("%s", phoneNumber);
-    printf("%s", phoneNumber);
-
+    printf("Input the frequency in hz, sample rate in hz, and time duration in seconds for which you want an output sine wave\n");
+    scanf("%f %f %f", &frequency, &sample_rate, &time_duration);
     printf("\n");
-
-    silence(8000, .25);
-    // printStandardTones(phoneNumber[0]);
-    for(int i = 1; i < 10; i++){
-        silence(8000, .25);
-        printStandardTones(phoneNumber[i]);
-    }
+    gensine(frequency, sample_rate, time_duration); // feeds the variables into the function which will display output values
     return 0;
-//    float frequency = 0;
-//    float sample_rate = 0;
-//    float time_duration = 0;
-//
-//    printf("Input the frequency in hz, sample rate in hz, and time duration in seconds for which you want an output sine wave\n");
-//    scanf("%f %f %f", &frequency, &sample_rate, &time_duration);
-//    printf("\n");
-//    gensine(frequency, sample_rate, time_duration); // feeds the variables into the function which will display output values
-//    return 0;
 }
